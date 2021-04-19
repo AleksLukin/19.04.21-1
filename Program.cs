@@ -83,7 +83,7 @@ namespace _19._04._21_1//
                 {
                     Console.WriteLine("d-непростое число");
                 }
-                break;
+                break;//
             }
             return number;//
         }
