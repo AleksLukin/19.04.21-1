@@ -1,17 +1,18 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _19._04._21_1//
+namespace _19._04._21_1
 {
 
     public static class Program
     {
         public class TestCase
         {
-            public int NUMBER { get; set; }//
+            public int NUMBER { get; set; }
             public int Excpected { get; set; }
             public Exception ExcpectedException { get; set; }
         }
@@ -20,7 +21,7 @@ namespace _19._04._21_1//
         {
             try
             {
-                var actual = CheckNumber(testCase.NUMBER);//
+                var actual = CheckNumber(testCase.NUMBER);
 
                 if (actual == testCase.Excpected)
                 {
@@ -28,7 +29,7 @@ namespace _19._04._21_1//
                 }
                 else
                 {
-                    Console.WriteLine("недействительный тест");//
+                    Console.WriteLine("недействительный тест");
                 }
             }
 
@@ -36,7 +37,7 @@ namespace _19._04._21_1//
             {
                 if (testCase.ExcpectedException != null)
                 {
-                    Console.WriteLine("действительный тест");//
+                    Console.WriteLine("действительный тест");
                 }
                 else
                 {
@@ -46,12 +47,12 @@ namespace _19._04._21_1//
 
         }
 
-        static void Main(string[] args)//
+        static void Main(string[] args)
         {
             var testCase1 = new TestCase()
             {
                 NUMBER = 5,
-                Excpected = 5,//
+                Excpected = 5,
 
             };
 
@@ -59,7 +60,7 @@ namespace _19._04._21_1//
 
         }
 
-        static int CheckNumber(int number)//
+        static int CheckNumber(int number)
         {
             number = int.Parse(Console.ReadLine());
             int d = 0;
@@ -77,15 +78,15 @@ namespace _19._04._21_1//
                 }
                 if (d == 0)
                 {
-                    Console.WriteLine("d-простое число");//
+                    Console.WriteLine("d-простое число");
                 }
                 else
                 {
                     Console.WriteLine("d-непростое число");
                 }
-                break;//
+                break;
             }
-            return number;//
+            return number;
         }
     }
 }
